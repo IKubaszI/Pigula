@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/navy_blue"
     tools:context=".FindDoctorActivity">
 
     <TextView
@@ -16,8 +16,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="24 * 7 HEALTHCARE"
-        android:textColor="#fff"
+        android:text="PIGUŁA"
+        android:textColor="@color/rozowy"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -30,8 +30,8 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Top Doctors"
-        android:textColor="#fff777"
+        android:text="Najlepsi doktorowie"
+        android:textColor="@color/colorWhite"
         android:textSize="20sp"
         android:textStyle="bold" />
     <GridLayout
@@ -51,7 +51,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/purpleDark"
+            app:cardBackgroundColor="@color/morski"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -69,9 +69,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FAMILY PHYSICIANS"
+                    android:text="LEKARZE RODZINNI"
                     android:textAlignment="center"
-                    android:textColor="@color/yellowLight"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -79,14 +79,14 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardFDDietician"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="148dp"
+            android:layout_height="124dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/purpleDark"
+            app:cardBackgroundColor="@color/morski"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -106,9 +106,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DIETICIAN"
+                    android:text="DIETETYCY"
                     android:textAlignment="center"
-                    android:textColor="@color/yellowLight"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -122,7 +122,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/purpleDark"
+            app:cardBackgroundColor="@color/morski"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -142,9 +142,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DENTIST"
+                    android:text="DENTYŚCI"
                     android:textAlignment="center"
-                    android:textColor="@color/yellowLight"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -157,7 +157,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/purpleDark"
+            app:cardBackgroundColor="@color/morski"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -177,9 +177,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SURGEON"
+                    android:text="CHIRURGOWIE"
                     android:textAlignment="center"
-                    android:textColor="@color/yellowLight"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -192,7 +192,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/purpleDark"
+            app:cardBackgroundColor="@color/morski"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -212,9 +212,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CARDIOLOGISTS"
+                    android:text="KARDIOLODZY"
                     android:textAlignment="center"
-                    android:textColor="@color/yellowLight"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -227,7 +227,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="@color/purpleDark"
+            app:cardBackgroundColor="@color/morski"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -247,9 +247,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="BACK"
+                    android:text="WRÓĆ"
                     android:textAlignment="center"
-                    android:textColor="@color/yellowLight"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
