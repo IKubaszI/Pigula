@@ -145,7 +145,7 @@
         android:background="@drawable/btn_bg"
         android:text="Masz już konto?"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonBookAppointment" />
