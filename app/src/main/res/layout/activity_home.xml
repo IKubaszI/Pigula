@@ -10,16 +10,17 @@
         android:id="@+id/titleHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:padding="8dp"
         android:text="Piguła wita\nTwoj login"
         android:textColor="#FF007A"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:layout_margin="16dp"
-        android:padding="8dp"
-        android:background="#1B3754"
-        android:layout_marginTop="12dp"/>
+        android:textStyle="bold" />
 
     <GridLayout
         android:id="@+id/gridMenu"
@@ -46,7 +47,7 @@
             app:cardElevation="4dp"
             app:cardUseCompatPadding="true"
             app:cardPreventCornerOverlap="true"
->
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
