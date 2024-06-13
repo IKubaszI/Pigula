@@ -6,16 +6,6 @@
     android:background="#001B34"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/buttonGoToCartLab"
-        android:layout_width="74dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="#08DDCE"
-        android:text="🛃"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold" />
-
     <TextView
         android:id="@+id/titleHome"
         android:layout_width="wrap_content"
@@ -35,6 +25,19 @@
         android:text="Piguła wita\nTwoj login"
         android:textColor="#FF007A"
         android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonGoToCartLab"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="323dp"
+        android:background="#08DDCE"
+        android:foreground="@drawable/koszyk"
+        android:text="🛃"
+        android:textColor="#FFFFFF"
         android:textStyle="bold" />
 
     <GridLayout
