@@ -6,6 +6,16 @@
     android:background="#001B34"
     tools:context=".HomeActivity">
 
+    <Button
+        android:id="@+id/buttonGoToCartLab"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#08DDCE"
+        android:text="🛃"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/titleHome"
         android:layout_width="wrap_content"
@@ -188,7 +198,9 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/mnisi" />
+                    android:src="@drawable/dlugo"
+                    android:text="Poradniki"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -197,7 +209,7 @@
                     android:shadowDx="1"
                     android:shadowDy="8"
                     android:shadowRadius="0.1"
-                    android:text="O nas"
+                    android:text="Poradniki"
 
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -229,12 +241,12 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/dlugo" />
+                    android:src="@drawable/mnisi"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Poradniki"
+                    android:text="O nas"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
