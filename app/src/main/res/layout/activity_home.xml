@@ -232,18 +232,4 @@
         android:background="#000000"
         android:src="@drawable/mapa" />
 
-</RelativeLayout><layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-<item>
-    <shape android:shape="rectangle">
-        <solid android:color="#000000"/> <!-- Wewnętrzne tło dla obramowania -->
-        <stroke android:width="8dp" android:color="#00FFFF"/> <!-- Jasnoniebieskie obramowanie -->
-    </shape>
-</item>
-<item android:right="5dp" android:left="5dp" android:top="5dp" android:bottom="5dp">
-    <shape android:shape="rectangle">
-        <solid android:color="#000000"/> <!-- Wewnętrzne tło mapy -->
-        <stroke android:width="2dp" android:color="#1B3754"/> <!-- Czarne obramowanie wewnętrzne -->
-    </shape>
-</item>
-</layer-list>
-
+</RelativeLayout>
