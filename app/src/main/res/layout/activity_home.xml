@@ -21,21 +21,19 @@
         android:shadowDx="20"
         android:shadowDy="20"
         android:shadowRadius="0.3"
-
         android:text="Piguła wita\nTwoj login"
         android:textColor="#FF007A"
         android:textSize="40sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/buttonGoToCartLab"
+        android:id="@+id/cardExit"
         android:layout_width="wrap_content"
         android:layout_height="69dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="323dp"
+        android:layout_marginEnd="16dp"
         android:background="#08DDCE"
-        android:foreground="@drawable/koszyk"
         android:text="🛃"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />
@@ -60,7 +58,7 @@
             android:layout_row="0"
             android:layout_column="0"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#009688"
+            app:cardBackgroundColor="#08DDCE"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
@@ -69,15 +67,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/morski"
-
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-
                     android:src="@drawable/lekarz" />
 
                 <TextView
@@ -89,11 +84,9 @@
                     android:shadowRadius="0.1"
                     android:text="Specjaliści"
                     android:textAlignment="center"
-
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:cardBackgroundColor="@color/morski" />
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -105,7 +98,7 @@
             android:layout_column="1"
             android:layout_margin="8dp"
             android:background="@drawable/card_border"
-            app:cardBackgroundColor="@color/morski"
+            app:cardBackgroundColor="#08DDCE"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
@@ -145,7 +138,7 @@
             android:layout_column="2"
             android:layout_margin="8dp"
             android:background="@drawable/card_border"
-            app:cardBackgroundColor="@color/morski"
+            app:cardBackgroundColor="#08DDCE"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
@@ -185,7 +178,7 @@
             android:layout_column="0"
             android:layout_margin="8dp"
             android:background="@drawable/card_border"
-            app:cardBackgroundColor="#009688"
+            app:cardBackgroundColor="#08DDCE"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
@@ -194,16 +187,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/morski"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/dlugo"
-                    android:text="Poradniki"
-                    />
+                    android:src="@drawable/dlugo" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -213,7 +203,6 @@
                     android:shadowDy="8"
                     android:shadowRadius="0.1"
                     android:text="Poradniki"
-
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
@@ -222,14 +211,14 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardOrderDetails"
+            android:id="@+id/buttonGoToMedicine"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="1"
             android:layout_column="1"
             android:layout_margin="8dp"
             android:background="@color/morski"
-            app:cardBackgroundColor="@color/morski"
+            app:cardBackgroundColor="#08DDCE"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
@@ -244,32 +233,32 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/mnisi"/>
+                    android:src="@drawable/mnisi" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="O nas"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14sp"
                     android:shadowColor="#000000"
                     android:shadowDx="1"
                     android:shadowDy="8"
                     android:shadowRadius="0.1"
+                    android:text="Twoje Leki"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardExit"
+            android:id="@+id/buttonGoToCartLab"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="1"
             android:layout_column="2"
             android:layout_margin="8dp"
             android:background="@color/morski"
-            app:cardBackgroundColor="@color/morski"
+            app:cardBackgroundColor="#08DDCE"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="true"
@@ -289,13 +278,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Koszyk"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
                     android:shadowColor="#000000"
                     android:shadowDx="1"
                     android:shadowDy="8"
                     android:shadowRadius="0.1"
+                    android:text="Twoje Badania"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -303,17 +292,14 @@
     </GridLayout>
 
     <RelativeLayout
-
+        android:id="@+id/mapContainer"
         android:layout_width="336dp"
         android:layout_height="246dp"
         android:layout_below="@+id/gridMenu"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/map_border"
-        android:layout_centerInParent="true">
-
-             />
+        android:background="@drawable/map_border">
 
         <ImageView
 
@@ -324,5 +310,5 @@
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>

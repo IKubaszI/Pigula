@@ -38,14 +38,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        CardView orderDetails = findViewById(R.id.cardOrderDetails);
-        orderDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, OrderDetailsActivity.class));
-            }
-        });
-
         CardView buyMedicine = findViewById(R.id.cardBuyMedicine);
         buyMedicine.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +54,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        CardView exit = findViewById(R.id.cardExit);
+        Button exit = findViewById(R.id.cardExit);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -73,11 +65,19 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonGoToCartLab = findViewById(R.id.buttonGoToCartLab);
+        CardView buttonGoToCartLab = findViewById(R.id.buttonGoToCartLab);
         buttonGoToCartLab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, CartLabActivity.class));
+            }
+        });
+
+        CardView buttonGoToMedicine = findViewById(R.id.buttonGoToMedicine);
+        buttonGoToMedicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, CartBuyMedicineActivity.class));
             }
         });
     }
