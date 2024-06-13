@@ -29,7 +29,13 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, FindDoctorActivity.class));
             }
         });
-
+        Button buttonGoToConversation = findViewById(R.id.buttonGoToConversation);
+        buttonGoToConversation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(HomeActivity.this, BaseActivity.class));
+            }
+        });
         CardView labTest = findViewById(R.id.cardLabTest);
         labTest.setOnClickListener(new View.OnClickListener() {
             @Override

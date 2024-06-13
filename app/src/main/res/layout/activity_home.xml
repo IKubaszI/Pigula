@@ -292,6 +292,17 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
+    <Button
+        android:id="@+id/buttonGoToConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#08DDCE"
+        android:text="Otwórz konwersację"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:id="@+id/mapContainer"
