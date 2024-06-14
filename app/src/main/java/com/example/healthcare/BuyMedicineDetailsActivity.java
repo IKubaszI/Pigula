@@ -53,10 +53,10 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
 
                 if(db.checkCart(username,product)==1){
-                    Toast.makeText(getApplicationContext(),"Product Alredy Added",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Produkt zostal dodany  yeayy ",Toast.LENGTH_SHORT).show();
                 }else{
                     db.addCart(username,product,price,"medicine");
-                    Toast.makeText(getApplicationContext(),"Record Inserted to Cart",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Produkt znajduje się już w koszyku",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(BuyMedicineDetailsActivity.this,BuyMedicineActivity.class));
                 }
             }

@@ -53,10 +53,10 @@ public class LabTestDetailsActivity extends AppCompatActivity {
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
 
                 if(db.checkCart(username,product)==1){
-                    Toast.makeText(getApplicationContext(),"Product Alredy Added",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Dodano twoj produkt",Toast.LENGTH_SHORT).show();
                 }else {
                     db.addCart(username,product,price,"lab");
-                    Toast.makeText(getApplicationContext(),"Record Inserted to Cart",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Produkt już jest w koszyku",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(LabTestDetailsActivity.this,LabTestActivity.class));
                 }
             }
