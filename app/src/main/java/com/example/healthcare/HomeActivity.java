@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView titleHome = findViewById(R.id.titleHome);
         titleHome.setText("Piguła wita użytkownika " + username);
 
-        Toast.makeText(getApplicationContext(), "Welcome " + username, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Witaj użytkowniku " + username, Toast.LENGTH_SHORT).show();
 
         CardView findDoctor = findViewById(R.id.cardFindDoctor);
         findDoctor.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +57,8 @@ public class HomeActivity extends AppCompatActivity {
         health.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, HealthArticlesActivity.class));
+                // Zmiana aktywności na BaseActivity dla przycisku Forum
+                startActivity(new Intent(HomeActivity.this, BaseActivity.class));
             }
         });
 
