@@ -118,8 +118,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Leki
-"
+                    android:text="Leki"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:shadowColor="#000000"
@@ -163,8 +162,7 @@
                     android:shadowDx="1"
                     android:shadowDy="8"
                     android:shadowRadius="0.1"
-                    android:text="Testy
-"
+                    android:text="Testy"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp"
@@ -292,17 +290,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
-    <Button
-        android:id="@+id/buttonGoToConversation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/gridMenu"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="#08DDCE"
-        android:text="Otwórz konwersację"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"/>
 
     <RelativeLayout
         android:id="@+id/mapContainer"
@@ -315,13 +302,11 @@
         android:background="@drawable/map_border">
 
         <ImageView
-
+            android:id="@+id/imageViewMap"
             android:layout_width="324dp"
             android:layout_height="match_parent"
             android:translationX="20px"
             app:srcCompat="@drawable/mapa" />
-
-
-
     </RelativeLayout>
+
 </RelativeLayout>
