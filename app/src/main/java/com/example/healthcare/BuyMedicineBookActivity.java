@@ -28,7 +28,6 @@ public class BuyMedicineBookActivity extends AppCompatActivity {
         Intent intent=getIntent();
         String[] price = intent.getStringExtra("price").toString().split(java.util.regex.Pattern.quote(":"));
         String date = intent.getStringExtra("date");
-        //String time = intent.getStringExtra("time");
 
         btnBooking.setOnClickListener(new View.OnClickListener() {
             @Override

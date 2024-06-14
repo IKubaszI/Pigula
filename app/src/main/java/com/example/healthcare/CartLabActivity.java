@@ -51,8 +51,6 @@ public class CartLabActivity extends AppCompatActivity {
 
         float totalAmount = 0;
         ArrayList dbData = db.getCartData(username,"lab");
-        //Toast.makeText(getApplicationContext(),""+dbData,Toast.LENGTH_LONG).show();
-
         packages = new String[dbData.size()][];
         for(int i=0;i<packages.length;i++){
             packages[i] = new String[5];
@@ -101,7 +99,6 @@ public class CartLabActivity extends AppCompatActivity {
             }
         });
 
-        //datepicker
         initDatePicker();
         dateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,7 +107,6 @@ public class CartLabActivity extends AppCompatActivity {
             }
         });
 
-        //timePicker
         initTimePicker();
         timeButton.setOnClickListener(new View.OnClickListener() {
             @Override

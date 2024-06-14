@@ -44,20 +44,20 @@ public class RegisterActivity extends AppCompatActivity {
                 String confirm = edConfirm.getText().toString();
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
                 if(username.length()==0 || email.length()==0 || password.length()==0 || confirm.length()==0){
-                    Toast.makeText(getApplicationContext(),"Please fill All details",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Prosze wypełnij wszystkie pola ;)",Toast.LENGTH_SHORT).show();
                 }
                 else{
                     if(password.compareTo(confirm)==0){
                         if(isValid(password)) {
                             db.register(username,email,password);
-                            Toast.makeText(getApplicationContext(), "Record Inserted", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Zarejestrowano cię koleszko", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                         }
                         else{
-                        Toast.makeText(getApplicationContext(),"Password must contain at least 8 characters, having letter,digit and special symbol",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Cholerko haslo musi się składać z 8 liter dużej litery znaku specjalnego oraz liczb :)",Toast.LENGTH_SHORT).show();
                         }
                     }else{
-                        Toast.makeText(getApplicationContext(),"Password and Confirm password didn't match",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Ojoj Hasła nie są takie słodkie",Toast.LENGTH_SHORT).show();
                     }
                 }
             }

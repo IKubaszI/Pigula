@@ -23,7 +23,6 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username", "");
 
-        // Znalezienie TextView i ustawienie tekstu powitania
         TextView titleHome = findViewById(R.id.titleHome);
         titleHome.setText("Piguła wita użytkownika " + username);
 
@@ -57,7 +56,7 @@ public class HomeActivity extends AppCompatActivity {
         health.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Zmiana aktywności na BaseActivity dla przycisku Forum
+
                 startActivity(new Intent(HomeActivity.this, BaseActivity.class));
             }
         });
@@ -89,7 +88,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // Obsługa kliknięcia mapy
+
         ImageView map = findViewById(R.id.imageViewMap);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
