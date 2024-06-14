@@ -57,7 +57,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setText(fullname);
         ed2.setText(address);
         ed3.setText(contact);
-        ed4.setText("Cons Fees:"+fees+"/-");
+        ed4.setText("Oplata:"+fees+"/-");
 
         //datepicker
         initDatePicker();
@@ -91,10 +91,10 @@ public class BookAppointmentActivity extends AppCompatActivity {
                 SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedpreferences.getString("username","").toString();
                 if(db.checkAppointmentExists(username,title+" => "+fullname,address,contact,dateButton.getText().toString(),timeButton.getText().toString())==1){
-                    Toast.makeText(getApplicationContext(),"Appointmnet already booked",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Zarejestrowano",Toast.LENGTH_LONG).show();
                 }else{
                     db.addOrder(username,title+" => "+fullname,address,contact,0,dateButton.getText().toString(),timeButton.getText().toString(),Float.parseFloat(fees),"appointment");
-                    Toast.makeText(getApplicationContext(),"Your appointmnet is done successfully",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Juz Zarejestrowano",Toast.LENGTH_LONG).show();
                     startActivity(new Intent(BookAppointmentActivity.this,HomeActivity.class));
                 }
             }

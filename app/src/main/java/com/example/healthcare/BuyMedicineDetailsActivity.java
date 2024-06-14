@@ -33,7 +33,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
         Intent intent=getIntent();
         tvPackageName.setText(intent.getStringExtra("text1"));
         edDetails.setText(intent.getStringExtra("text2"));
-        tvTotalCost.setText("Total Cost : "+intent.getStringExtra("text3")+"/-");
+        tvTotalCost.setText("Koszt: "+intent.getStringExtra("text3")+"/-");
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +56,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Produkt zostal dodany  yeayy ",Toast.LENGTH_SHORT).show();
                 }else{
                     db.addCart(username,product,price,"medicine");
-                    Toast.makeText(getApplicationContext(),"Produkt znajduje się już w koszyku",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"Produkt zostal dodany  yeayy",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(BuyMedicineDetailsActivity.this,BuyMedicineActivity.class));
                 }
             }

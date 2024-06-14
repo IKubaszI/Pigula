@@ -24,11 +24,11 @@ public class HealthArticlesActivity extends AppCompatActivity {
                     {"Healthy Gut", "", "", "", "Click More Details"}
             };
     private int[] images = {
-            R.drawable.health1,
-            R.drawable.health2,
-            R.drawable.health3,
-            R.drawable.health4,
-            R.drawable.health5
+          //  R.drawable.health1,
+           // R.drawable.health2,
+           // R.drawable.health3,
+          //  R.drawable.health4,
+          //  R.drawable.health5
     };
     HashMap<String,String> item;
     ArrayList list;

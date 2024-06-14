@@ -38,7 +38,7 @@ public class BuyMedicineBookActivity extends AppCompatActivity {
                 Database db = new Database(getApplicationContext(),"healthcare",null,1);
                 db.addOrder(username,edname.getText().toString(),edaddress.getText().toString(),edcontact.getText().toString(),Integer.parseInt(edpincode.getText().toString()),date.toString(),"",Float.parseFloat(price[1].toString()),"medicine");
                 db.removeCart(username,"medicine");
-                Toast.makeText(getApplicationContext(),"Your booking is done successfully",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"zarejestrowano pomyslnie",Toast.LENGTH_LONG).show();
                 startActivity(new Intent(BuyMedicineBookActivity.this,HomeActivity.class));
 
             }
